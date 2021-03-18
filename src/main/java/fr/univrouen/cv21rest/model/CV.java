@@ -1,41 +1,47 @@
-// package fr.univrouen.cv21rest.model;
+package fr.univrouen.cv21rest.model;
 
-// import java.io.Serializable;
+import java.io.Serializable;
 
-// @XmlRootElement(name = "CV")
-// @XmlAccessorType(XmlAccessType.NONE)
-// public class CV implements Serializable {
-//     private static final long serialVersionUID = 1L;
-    
-//     @XmlAttribute
-//     private Integer id;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlAccessType;
 
-//     @XmlElement 
-//     private String nom;
+@XmlRootElement(name = "CV")
+@XmlAccessorType(XmlAccessType.NONE)
+public class CV implements Serializable {
+    private static final long serialVersionUID = 1L;
     
-//     @XmlElement 
-//     private String prenom;
-    
-//     @XmlElement 
-//     private String date;
-    
-//     @XmlElement 
-//     private String mel;
-    
-//     public CV(String nom, String prenom, String date, String mel)
-//     {
-//         super();
-//         this.nom = nom;
-//         this.prenom = prenom;
-//         this.date = date;
-//         this.mel = mel;
-//     }
+    @XmlAttribute
+    private Integer id;
 
-//     public CV() 
-//     {}
+    @XmlElement 
+    private String nom;
     
-//     @Override public String toString() 
-//     {
-//         return ("CV [" + nom + " " + prenom + ",Date=" + date + ",mel=" + mel + "]");
-//     }
-// }
+    @XmlElement 
+    private String prenom;
+    
+    @XmlElement 
+    private String date;
+    
+    @XmlElement 
+    private String mel;
+    
+    public CV(String nom, String prenom, String date, String mel)
+    {
+        super();
+        this.nom = nom;
+        this.prenom = prenom;
+        this.date = date;
+        this.mel = mel;
+    }
+
+    public CV() 
+    {}
+    
+    @Override public String toString() 
+    {
+        return ("CV [" + nom + " " + prenom + ",Date=" + date + ",mel=" + mel + "]");
+    }
+}
