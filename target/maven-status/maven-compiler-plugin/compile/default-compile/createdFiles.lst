@@ -1,2 +1,5 @@
 fr/univrouen/cv21rest/ServletInitializer.class
 fr/univrouen/cv21rest/Cv21restApplication.class
+fr/univrouen/cv21rest/controller/IndexController.class
+fr/univrouen/cv21rest/controller/PostCvController.class
+fr/univrouen/cv21rest/controller/GetCVController.class

@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: fr.univrouen.cv21rest.Cv21restApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.97 s - in fr.univrouen.cv21rest.Cv21restApplicationTests
